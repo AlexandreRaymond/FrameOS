@@ -1,0 +1,7 @@
+.desktop {
+  min-height: 95dvh;
+  width: 100dvw;
+  display: grid;
+  grid-template-columns: 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 3%;
+  grid-template-rows: 8% 8% 8% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+}

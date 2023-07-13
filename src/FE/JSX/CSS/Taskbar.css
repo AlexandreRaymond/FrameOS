@@ -1,0 +1,52 @@
+.taskbar {
+  background-color: #333;
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.taskbar-start,
+.taskbar-search {
+  margin: 0 0.25dvw;
+  color: white;
+  background-color: transparent;
+  outline: 1px solid #444;
+  font-size: 1.8em;
+  height: 5dvh;
+  width: 2.8dvw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskbar-start:hover,
+.taskbar-search:hover {
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.taskbar-icons {
+  background-color: transparent;
+  color: white;
+  height: 5dvh;
+  width: 30dvw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.2dvw;
+}
+
+.icon-spot {
+  outline: 1px solid #444;
+  height: 5dvh;
+  width: 20dvw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

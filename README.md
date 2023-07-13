@@ -1,2 +1,1 @@
-# FrameOS
-A fake operating system made in React.js
+A fake Operating system made in react.js
