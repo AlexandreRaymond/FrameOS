@@ -1,13 +1,13 @@
 .taskbar-tab-down {
-  background-color: transparent;
+  background-color: #333;
   border: none;
-  outline: 2px solid #111;
+  border-left: 1px solid #999;
   height: 5dvh;
-  width: 0.7dvw;
-  transition: all 0.5s;
+  width: 0.5dvw;
+  transition: all 0.2s;
 }
 
 .taskbar-tab-down:hover {
   cursor: pointer;
-  outline: 2px solid #222;
+  background-color: #555;
 }

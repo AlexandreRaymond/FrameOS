@@ -10,10 +10,9 @@
 
 .taskbar-start,
 .taskbar-search {
-  margin: 0 0.25dvw;
+  gap: 0.5dvw;
   color: white;
   background-color: transparent;
-  outline: 1px solid #444;
   font-size: 1.8em;
   height: 5dvh;
   width: 2.8dvw;
@@ -21,12 +20,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: all 0.1s;
 }
 
 .taskbar-start:hover,
 .taskbar-search:hover {
   cursor: pointer;
   color: whitesmoke;
+  background-color: #555;
 }
 
 .taskbar-icons {
