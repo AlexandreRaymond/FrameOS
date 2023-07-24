@@ -2,13 +2,14 @@
   color: white;
   height: 5dvh;
   width: 5dvw;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 5px;
+  transition: all 0.3s;
 }
 
 .taskbar-time:hover {

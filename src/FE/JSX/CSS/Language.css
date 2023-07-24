@@ -1,0 +1,14 @@
+.taskbar-language {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  height: 5dvh;
+  padding: 0.75dvw;
+  transition: all 0.3s;
+}
+
+.taskbar-language:hover {
+  background-color: #555;
+}

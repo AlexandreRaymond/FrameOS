@@ -1,0 +1,15 @@
+.taskbar-newsmail {
+  background-color: transparent;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 5dvh;
+  padding: 0.75dvw;
+  font-size: 1.5rem;
+}
+
+.taskbar-newsmail:hover {
+  background-color: #555;
+}

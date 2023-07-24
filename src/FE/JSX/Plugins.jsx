@@ -1,10 +1,11 @@
 import React from "react";
+import "./CSS/Plugins.css";
 import { BsFillUsbDriveFill } from "react-icons/bs";
 
 const Plugins = () => {
   return (
     <>
-      <div>
+      <div className="taskbar-plugins">
         <BsFillUsbDriveFill />
       </div>
     </>

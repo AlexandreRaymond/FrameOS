@@ -1,4 +1,5 @@
 import React from "react";
+import "./CSS/Language.css";
 
 const Language = () => {
   return (

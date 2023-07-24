@@ -1,10 +1,11 @@
 import React from "react";
+import "./CSS/InternetConnection.css";
 import { TbNetwork, TbNetworkOff, TbWifi, TbWifiOff } from "react-icons/tb";
 
 const InternetConnection = () => {
   return (
     <>
-      <div>
+      <div className="taskbar-internet-connection">
         <TbNetwork />
       </div>
     </>

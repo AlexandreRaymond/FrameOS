@@ -1,0 +1,14 @@
+.taskbar-audio {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 5dvh;
+  padding: 0.75dvw;
+  font-size: 1.25rem;
+}
+
+.taskbar-audio:hover {
+  background-color: #555;
+}

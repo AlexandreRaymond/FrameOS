@@ -21,11 +21,11 @@
   justify-content: center;
   align-items: center;
   transition: all 0.1s;
+  padding: 0.75dvw;
 }
 
 .taskbar-start:hover,
 .taskbar-search:hover {
-  cursor: pointer;
   color: whitesmoke;
   background-color: #555;
 }
@@ -40,4 +40,17 @@
   align-items: center;
   justify-content: center;
   margin: 0 0.2dvw;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  height: 5dvh;
+  width: 2.8dvw;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
