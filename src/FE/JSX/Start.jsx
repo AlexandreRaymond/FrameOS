@@ -9,7 +9,7 @@ const Start = () => {
         <button className="start">
           <BsFillDoorClosedFill />
         </button>
-        <div className="start-dropdown-menu">Dropdown Content</div>
+        <div className="start-dropdown-menu">Start Content</div>
       </div>
     </>
   );

@@ -1,10 +1,16 @@
 import React from "react";
+import "./CSS/Search.css";
 import { BsSearch } from "react-icons/bs";
 
 const Search = () => {
   return (
     <>
-      <BsSearch />
+      <div className="search-dropdown">
+        <button className="search">
+          <BsSearch />
+        </button>
+        <div className="search-dropdown-menu">Search Content</div>
+      </div>
     </>
   );
 };

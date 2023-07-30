@@ -1,8 +1,8 @@
-.start-dropdown {
+.search-dropdown {
   position: relative;
 }
 
-.start-dropdown-menu {
+.search-dropdown-menu {
   position: absolute;
   pointer-events: none;
   left: 0;
@@ -16,15 +16,15 @@
   transition: opacity 75ms ease-in-out, transform 75ms ease-in-out;
 }
 
-.start-dropdown-menu.active {
+.search-dropdown-menu.active {
   opacity: 1;
 }
 
-.start:focus {
+.search:focus {
   background-color: #444;
 }
 
-.start-dropdown > .start:focus + .start-dropdown-menu {
+.search-dropdown > .search:focus + .search-dropdown-menu {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);

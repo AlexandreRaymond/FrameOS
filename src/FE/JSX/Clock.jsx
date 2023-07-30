@@ -14,6 +14,14 @@ const Clock = () => {
     }
   };
 
+  const formatDay = (val) => {
+    if (val < 10) {
+      return "0";
+    } else {
+      return val;
+    }
+  };
+
   useEffect(() => {
     const timerID = setInterval(() => tick(), 1000);
 
@@ -28,13 +36,11 @@ const Clock = () => {
     const m = d.getMinutes();
     const s = d.getSeconds();
 
-    const day = d.getDay();
+    const day = d.getUTCDay();
     const month = d.getMonth();
     const year = d.getFullYear();
 
-    setDate(
-      formatTime(day) + day + "/" + formatTime(month) + month + "/" + year
-    );
+    setDate(d.getUTCDate() + "/" + formatDay(month) + (month + 1) + "/" + year);
 
     setTime(formatTime(h) + h + ":" + formatTime(m) + m);
 
@@ -45,9 +51,12 @@ const Clock = () => {
 
   return (
     <>
-      <div className="taskbar-time">
-        <div>{time}</div>
-        <div>{date}</div>
+      <div className="clock-dropdown">
+        <button className="clock">
+          <div>{time}</div>
+          <div>{date}</div>
+        </button>
+        <div className="clock-dropdown-menu">Clock Content</div>
       </div>
     </>
   );
