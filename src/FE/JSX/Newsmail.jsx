@@ -5,8 +5,11 @@ import { HiChatBubbleBottomCenterText } from "react-icons/hi2";
 const Newsmail = () => {
   return (
     <>
-      <div className="taskbar-newsmail">
-        <HiChatBubbleBottomCenterText />
+      <div className="newsmail-dropdown">
+        <button className=" newsmail">
+          <HiChatBubbleBottomCenterText />
+        </button>
+        <div className="newsmail-dropdown-menu">News on your PC</div>
       </div>
     </>
   );

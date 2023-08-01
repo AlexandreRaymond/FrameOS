@@ -5,8 +5,11 @@ import { TbNetwork, TbNetworkOff, TbWifi, TbWifiOff } from "react-icons/tb";
 const InternetConnection = () => {
   return (
     <>
-      <div className="taskbar-internet-connection">
-        <TbNetwork />
+      <div className="web-connection-dropdown">
+        <button className="web-connection">
+          <TbNetwork />
+        </button>
+        <div className="web-connection-dropdown-menu">Wifi?</div>
       </div>
     </>
   );

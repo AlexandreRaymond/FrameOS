@@ -40,7 +40,15 @@ const Clock = () => {
     const month = d.getMonth();
     const year = d.getFullYear();
 
-    setDate(d.getUTCDate() + "/" + formatDay(month) + (month + 1) + "/" + year);
+    setDate(
+      formatDay(day) +
+        d.getUTCDate() +
+        "/" +
+        formatDay(month) +
+        (month + 1) +
+        "/" +
+        year
+    );
 
     setTime(formatTime(h) + h + ":" + formatTime(m) + m);
 

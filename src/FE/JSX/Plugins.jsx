@@ -5,8 +5,11 @@ import { BsFillUsbDriveFill } from "react-icons/bs";
 const Plugins = () => {
   return (
     <>
-      <div className="taskbar-plugins">
-        <BsFillUsbDriveFill />
+      <div className="plugins-dropdown">
+        <button className="plugins">
+          <BsFillUsbDriveFill />
+        </button>
+        <div className="plugins-dropdown-menu">USB?</div>
       </div>
     </>
   );

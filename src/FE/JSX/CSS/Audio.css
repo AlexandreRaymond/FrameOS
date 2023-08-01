@@ -1,14 +1,48 @@
-.taskbar-audio {
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 5dvh;
-  padding: 0.75dvw;
-  font-size: 1.25rem;
+.audio-dropdown {
+  position: relative;
 }
 
-.taskbar-audio:hover {
+.audio-dropdown-menu {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  bottom: 5dvh;
+  background-color: #333;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  box-shadow: 2px 0 5px 0 rgba(0, 0, 0 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 75ms ease-in-out, transform 75ms ease-in-out;
+}
+
+.audio-dropdown-menu.active {
+  opacity: 1;
+}
+
+.audio:hover {
   background-color: #555;
+}
+
+.audio:focus {
+  background-color: #444;
+}
+
+.audio-dropdown > .audio:focus + .audio-dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.audio {
+  color: white;
+  height: 5dvh;
+  width: 3dvw;
+  font-size: 1.25rem;
+  /* font-weight: bold; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
 }
