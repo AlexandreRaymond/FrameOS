@@ -9,7 +9,9 @@ const Audio = () => {
         <button className="audio">
           <AiFillSound />
         </button>
-        <div className="audio-dropdown-menu">Sounds</div>
+        <div className="audio-dropdown-menu">
+          <input type="range" min="0" max="100" value="50"></input>
+        </div>
       </div>
     </>
   );
