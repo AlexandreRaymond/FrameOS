@@ -10,24 +10,27 @@ const Audio = () => {
   } = useContext(InfoContext);
 
   const checkModal = () => {
-    if (modalOpen) {
-      return setModalOpen(0);
+    if (modalOpen !== "audio") {
+      return;
+    } else {
+      return setModalOpen("audio");
     }
   };
 
   return (
     <>
       <div className="audio-dropdown">
-        <button className="audio" onClick={setModalOpen(1)}>
+        <button className="audio" onClick={setModalOpen("audio")}>
           <AiFillSound />
         </button>
-        <div
-          className="audio-dropdown-menu"
-          onClick={(e) => e.stopPropagation()}
-          style={{ opacity: { modalOpen } }}
-        >
-          <input type="range" min="0" max="100" value="50"></input>
-        </div>
+        {modalOpen === "audio" && (
+          <div
+            className="audio-dropdown-menu"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <input type="range" min="0" max="100" value="50"></input>
+          </div>
+        )}
       </div>
     </>
   );
